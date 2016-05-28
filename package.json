@@ -1,18 +1,21 @@
 {
   "name": "console-style-parser",
   
-  "version": "0.0.1",
+  "version": "0.0.2",
   
   "description": "A simple module for parsing console.log colors",
   
-  "main": "./dist/index.js",
+  "main": "./lib/index.js",
+
+  "typescript": {
+    "definition": "./lib/index.d.ts"
+  },
   
-  "typings": "./dist/index.d.ts",
+  "typings": "./lib/index.d.ts",
   
   "scripts": {
     "start" : "tsc -w",
-    "build" : "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build" : "tsc"
   },
   
   "repository": {
