@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+  	"rootDir": "src",
+    "outDir": "lib",
+    "module": "CommonJS",
+    "target": "ES5",
+    "noImplicitAny": false,
+    "removeComments": true,
+    "noLib": false,
+    "declaration": true
+  },
+  "files": [
+    "./src/index.ts"
+  ]
+}
