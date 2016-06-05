@@ -1,46 +1,39 @@
 {
   "name": "console-style-parser",
-  
-  "version": "0.0.2",
-  
+  "version": "0.0.3",
   "description": "A simple module for parsing console.log colors",
-  
   "main": "./lib/index.js",
-
   "typescript": {
     "definition": "./lib/index.d.ts"
   },
-  
   "typings": "./lib/index.d.ts",
-  
   "scripts": {
-    "start" : "tsc -w",
-    "build" : "tsc"
+    "postinstall": "typings install",
+    "start": "tsc -w",
+    "build": "tsc",
+    "pretest": "tsc test/index.ts",
+    "test": "mocha"
   },
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/altayaydemir/console-style-parser.git"
   },
-
   "keywords": [
     "console",
     "console log",
     "style",
     "parser"
   ],
-
   "author": "Altay Aydemir <altay.aydemir@gmail.com>",
-  
   "license": "MIT",
-  
   "bugs": {
     "url": "https://github.com/altayaydemir/console-style-parser/issues"
   },
-  
   "homepage": "https://github.com/altayaydemir/console-style-parser#readme",
-  
   "devDependencies": {
-    "typescript": "^1.8.10"
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "typescript": "^1.8.10",
+    "typings": "^1.0.4"
   }
 }
