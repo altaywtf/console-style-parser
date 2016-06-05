@@ -1,15 +1,19 @@
 language: node_js
-
 node_js:
-  - "stable"
-
+- stable
 cache:
   directories:
-    - node_modules
-    - typings
-
+  - node_modules
+  - typings
 install:
-  - npm install
-
+- npm install
 script:
-  - npm test
+- npm test
+deploy:
+  provider: npm
+  email: altay.aydemir@gmail.com
+  api_key:
+    secure: OC8DZdsZwtzU936Gl54p9pipcl3jz1sImKkPXZOm34mgYQ0b318lNzOoz8FhZ0V92N5XAeGhdJm2foLbwM4VZlIX+pAeR+d1t8GbG482t+APlINEgzx0j4NdY+HmAGyhY/hD8jXC6k+RBnc15r6CW8J7fdTND9CI+8Jw20f5XgBj2nz3BMxWSSLK3EkdmKSsUb/60r4mUa/E+ybBLsDt9cSD+3SyEAaQ0ib/0GNsdvJZ4EgBZHTAnVmjJIwQSpw+qxwIdGX3+B2Gw4bIUA5pREPPSBpevkKaxzutDv8Rxue5BcwrTArodn/tGyOj29RH5kfb9nu2odp30ua7b/xurX0K8LWNOROCJDo4vW6viJ6+GUaWGEkmb+bL9jCKuI8oOLZ4Pmc5RNA2FwRvu3KYEu20JKH5dVZgfIsIHljSNeVURolY8g8dhHcGuFd0ovb1CFOIHCJS0w0WSjUtBrt9hUlhlOO6nvGDo0uVN9/oe3pdWwxi0BzxfAb19X8NiWMS3jDjaKF0Dil6+XDLPkLOj4erKdESUSsSxd8enhIs+kWFBJOOLX2yIRIXbIRZ5fr2HYAVm1EWMELBNiCnuGQiAvMTSNn/rxzburybnsMqvFN1Iq5os7/HM/kplUijZAgSfzy8gMMNQK0HcUw+YUXOqaGx6wiOJ8IoBXA5CobB9hY=
+  on:
+    tags: true
+    repo: altayaydemir/console-style-parser
