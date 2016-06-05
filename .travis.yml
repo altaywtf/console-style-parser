@@ -9,7 +9,7 @@ cache:
     - typings
 
 install:
-  - npm run setup
+  - npm install
 
 script:
   - npm test
